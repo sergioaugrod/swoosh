@@ -27,7 +27,7 @@ defmodule Swoosh.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :poison, :hackney, :mime],
+    [extra_applications: [:logger, :xmerl],
      mod: {Swoosh.Application, []}]
   end
 
